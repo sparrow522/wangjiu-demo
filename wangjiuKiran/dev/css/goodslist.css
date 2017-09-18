@@ -1,0 +1,154 @@
+@charset "UTF-8";
+.detail_warp {
+  width: 1200px;
+  margin: 0 auto 25px;
+  background: #f8f8f8;
+}
+
+.detail_warp .detail_nav {
+  width: 1200px;
+  height: 17px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.detail_warp .detail_nav ul li a {
+  color: #333;
+}
+
+.detail_warp .detail_goods {
+  z-index: 10;
+  width: 1200px;
+  height: 542px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #fff;
+}
+
+.detail_warp .detail_goods .detail_imglist {
+  float: left;
+  width: 420px;
+  height: 542px;
+  padding-left: 20px;
+  padding-right: 20px;
+  /*----- 放大镜开始 --------*/
+  /*----- 放大镜结束 --------*/
+}
+
+.detail_warp .detail_goods .detail_imglist .detail_smallimg {
+  width: 418px;
+  height: 418px;
+  border: 1px solid #eee;
+  background: url(../img/goodslist/1.jpg) center;
+  background-size: cover;
+  position: absolute;
+}
+
+.detail_warp .detail_goods .detail_imglist .detail_smallimg .detail_smallcursor {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  width: 60px;
+  height: 60px;
+  background: rgba(200, 198, 255, 0.8);
+}
+
+.detail_warp .detail_goods .detail_imglist .detail_bigcursor {
+  z-index: 20;
+  position: absolute;
+  left: 603px;
+  top: 268px;
+  width: 418px;
+  height: 418px;
+  background: rgba(200, 198, 255, 0.1);
+  overflow: hidden;
+}
+
+.detail_warp .detail_goods .detail_imglist .detail_bigcursor .detail_bigimg {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.detail_warp .detail_goods .detail_content {
+  width: 720px;
+  height: 502px;
+  float: left;
+}
+
+.detail_warp .detail_goods .detail_content h1 {
+  color: #000;
+  font-size: 20px;
+  width: 720px;
+  height: 26px;
+  line-height: 26px;
+  font-weight: 600;
+}
+
+.detail_warp .detail_goods .detail_content h2 {
+  color: #999;
+  font-size: 12px;
+  width: 720px;
+  height: 17px;
+  line-height: 16px;
+}
+
+.detail_warp .detail_goods .detail_content h3 {
+  color: #a50158;
+  font-size: 14px;
+  width: 720px;
+  height: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 20px;
+}
+
+.detail_warp .detail_goods .detail_content .detail_price {
+  width: 720px;
+  height: 41px;
+  margin-top: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #f5f5f5;
+}
+
+.detail_warp .detail_goods .detail_content .detail_price div.title {
+  float: left;
+  margin-left: 20px;
+  height: 41px;
+  line-height: 40px;
+}
+
+.detail_warp .detail_goods .detail_content .detail_price div.price {
+  float: left;
+  margin-left: 50px;
+  width: 60px;
+  height: 41px;
+  line-height: 40px;
+  font-size: 20px;
+  color: #a50158;
+}
+
+.detail_warp .detail_goods .detail_content .detail_price div.comment_num {
+  float: left;
+  margin-left: 450px;
+  width: 50px;
+  height: 15px;
+  line-height: 14px;
+  text-align: right;
+  margin-top: 13px;
+  background: url(../img/goodslist/d_i.png) 0 0 no-repeat;
+}
+
+.detail_warp .detail_goods .detail_content .detail_price a {
+  width: 30px;
+  height: 41px;
+  line-height: 40px;
+  color: #333;
+}
+
+.detail_warp .detail_goods .detail_content .detail_price a:hover {
+  color: #a50158;
+}

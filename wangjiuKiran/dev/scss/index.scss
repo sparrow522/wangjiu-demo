@@ -1,0 +1,334 @@
+.swiper-container {
+  width: 100%;
+  height: 400px;
+}
+
+#wj_dynamic {
+  margin: 25px auto;
+  height: 20px;
+  width: 1200px;
+  background: #fff;
+  span {
+    margin-left: 20px;
+  }
+  a {
+    color: red;
+  }
+}
+
+#wj_today {
+  margin: 0 auto;
+  width: 1200px;
+  height: 353px;
+  background: #fff;
+  padding-bottom: 50px;
+  .today_title {
+    width: 100%;
+    height: 71px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    h2 {
+      width: 150px;
+      height: 35px;
+      margin: 0 auto;
+      margin-bottom: 5px;
+      color: #000;
+      text-align: center;
+      font-size: 24px;
+      font-weight: 500;
+      /* background: url(../img/index/in_png.png) 0 -556px no-repeat; */
+    }
+    div {
+      font-size: 16px;
+      text-align: center;
+      margin: 0 auto;
+      span {
+        color: #999;
+      }
+      a {
+        color: #a40c59;
+      }
+    }
+  }
+  .today_content {
+    width: 100%;
+    height: 282px;
+    background: #fff;
+    border: 1px solid #ddd;
+    .today_timer {
+      float: left;
+      width: 198px;
+      height: 280px;
+      background: #f9f7f7 url(../img/index/time_BJ.jpg) center 75px no-repeat;
+      p {
+        width: 198px;
+        height: 75px;
+        text-align: center;
+        color: #a40c59;
+        line-height: 74px;
+        font-size: 14px;
+        font-weight: 600;
+      }
+    }
+    .flash_goods {
+      float: left;
+      width: 200px;
+      height: 280px;
+      dl {
+        float: left;
+        width: 100%;
+        height: 100%;
+        dt {
+          width: 200px;
+          float: left;
+          height: 200px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          a img {
+            width: 200px;
+            height: 209px;
+          }
+        }
+        dd {
+          width: 200px;
+          float: left;
+          height: 60px;
+          border-right: 1px solid #ddd;
+          div p {
+            width: 200px;
+            height: 24px;
+            line-height: 24px;
+            text-align: center;
+            color: #999;
+            font-weight: 600;
+            font-size: 14px;
+          }
+          div span {
+            display: block;
+            width: 180px;
+            padding-left: 20px;
+            height: 36px;
+            line-height: 36px;
+            color: #a21459;
+            font-weight: 600;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+#wj_hot {
+  width: 1202px;
+  height: 452px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  h2 {
+    width: 100%;
+    height: 50px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #000;
+    line-height: 50px;
+    font-weight: 500;
+    font-size: 24px;
+  }
+  div {
+    height: 400px;
+    width: 1200px;
+    border: 1px solid #ddd;
+    a {
+      display: block;
+      float: left;
+      width: 300px;
+      height: 400px;
+      img {
+        border-right: 1px solid #ddd;
+        width: 299px;
+        height: 400px;
+      }
+    }
+  }
+}
+
+#wj_transition {
+  margin: 0 auto;
+  width: 1200px;
+  height: 185px;
+  padding-bottom: 35px;
+  a,
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#wj_productwine {
+  margin: 0 auto;
+  height: 506px;
+  padding-bottom: 40px;
+  width: 1200px;
+  .product_nav {
+    width: 100%;
+    height: 28px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    h2 {
+      margin-right: 20px;
+      float: left;
+      height: 33px;
+      line-height: 32px;
+      color: #000;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    ul {
+      margin-top: 13px;
+      float: left;
+      li {
+        margin-right: 20px;
+        float: left;
+        a {
+          height: 20px;
+          line-height: 20px;
+          color: #999;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .more {
+      margin-top: 13px;
+      float: right;
+      a {
+        color: #000;
+        font-size: 16px;
+        &:hover {
+          color: #c5166e;
+        }
+      }
+    }
+  }
+  .product_content {
+    width: 100%;
+    height: 463px;
+    .pro_img {
+      float: left;
+      width: 224px;
+      height: 100%;
+      a {
+        width: 224px;
+        height: 100%;
+        img {
+          width: 224px;
+          height: 100%;
+        }
+      }
+    }
+    .pro_listinfo {
+      float: left;
+      width: 974px;
+      height: 461px;
+      border: 1px solid #ddd;
+      ul.pro_list {
+        float: left;
+        width: 764px;
+        height: 462px;
+        li {
+          float: left;
+          width: 190px;
+          height: 231px;
+          border-right: 1px solid #ddd;
+          border-top: 1px solid #ddd;
+          margin-top: -1px;
+          div.pro_listimg {
+            width: 190px;
+            height: 180px;
+            a {
+              display: block;
+              width: 190px;
+              height: 175px;
+              border-bottom: 5px;
+              img {
+                width: 165px;
+                height: 165px;
+                padding-top: 10px;
+              }
+            }
+          }
+          div {
+            width: 190px;
+            height: 48px;
+            padding-top: 3px;
+            p {
+              width: 170px;
+              height: 18px;
+              margin-left: 10px;
+              margin-right: 10px;
+              color: #ddd;
+              font-size: 16px;
+              line-height: 18px;
+              text-align: center;
+            }
+            span {
+              display: block;
+              margin-left: 70px;
+              color: #a40c59;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+      .pro_hot {
+        float: left;
+        height: 461px;
+        width: 200px;
+        padding-left: 5px;
+        padding-right: 5px;
+        span {
+          color: #a21459;
+          font-size: 14px;
+          line-height: 40px;
+          height: 40px;
+          padding-left: 2px;
+          display: block;
+        }
+        ul {
+          width: 200px;
+          height: 228px;
+          overflow: hidden;
+        }
+        div {
+          width: 200px;
+          height: 193px;
+          border-top: 1px solid #ddd;
+          a {
+            width: 200px;
+            height: 32px;
+            border-bottom: 1px solid #eee;
+            margin-bottom: -1px;
+            display: block;
+            line-height: 32px;
+            overflow: hidden;
+            color: #ddd;
+            em {
+              width: 14px;
+              height: 14px;
+              background: #ccc;
+              display: block;
+              float: left;
+              margin: 8px 5px 0 5px;
+              text-align: center;
+              line-height: 14px;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

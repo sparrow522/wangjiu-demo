@@ -1,0 +1,112 @@
+#footer {
+  width: 100%;
+  height: 447px;
+  background: #fff;
+  border-top: 1px solid #cccccc;
+}
+
+#footer .footer_happy {
+  width: 1120px;
+  height: 72px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  margin: 0 auto;
+}
+
+#footer .footer_happy dl {
+  float: left;
+  width: 280px;
+  height: 50px;
+  margin-top: 22px;
+}
+
+#footer .footer_happy dl dt {
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  background: url(../img/footer/ico-2015-12s.png) 0 0 no-repeat;
+}
+
+#footer .footer_happy dl dd {
+  float: left;
+  width: 112px;
+  height: 34px;
+  margin-top: 6px;
+  font-size: 14px;
+  line-height: 34px;
+}
+
+#footer .footer_aboutus {
+  margin: 0 auto;
+  width: 1200px;
+  height: 154px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 1px dashed #cccccc;
+}
+
+#footer .footer_aboutus dl {
+  width: 145px;
+  height: 106px;
+  float: left;
+}
+
+#footer .footer_aboutus dl dt {
+  width: 145px;
+  height: 24px;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+
+#footer .footer_aboutus dl dd {
+  width: 145px;
+  height: 24px;
+}
+
+#footer .footer_aboutus dl dd a {
+  color: #333333;
+  cursor: pointer;
+}
+
+#footer .footer_aboutus dl dd a:hover {
+  color: red;
+}
+
+#footer .footer_tips {
+  width: 1200px;
+  margin: 0 auto;
+  height: 60px;
+  padding: 20px 0;
+  background: #000;
+}
+
+#footer .footer_tips .footer_tipsleft {
+  float: left;
+  width: 970px;
+  height: 60px;
+}
+
+#footer .footer_tips .footer_tipsleft a {
+  color: #fff;
+}
+
+#footer .footer_tips .footer_tipsleft span {
+  display: block;
+  color: #fff;
+  margin-top: 5px;
+}
+
+#footer .footer_tips .footer_tipsright {
+  width: 230px;
+  float: left;
+  text-align: right;
+  background: url(../img/header/ico-2015-12.png) 0 -646px no-repeat;
+}
+
+#footer .footer_tips .footer_tipsright span {
+  display: block;
+  color: #fff;
+  margin-top: 8px;
+}

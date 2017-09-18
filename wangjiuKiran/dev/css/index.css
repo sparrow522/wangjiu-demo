@@ -1,0 +1,384 @@
+.swiper-container {
+  width: 100%;
+  height: 400px;
+}
+
+#wj_dynamic {
+  margin: 25px auto;
+  height: 20px;
+  width: 1200px;
+  background: #fff;
+}
+
+#wj_dynamic span {
+  margin-left: 20px;
+}
+
+#wj_dynamic a {
+  color: red;
+}
+
+#wj_today {
+  margin: 0 auto;
+  width: 1200px;
+  height: 353px;
+  background: #fff;
+  padding-bottom: 50px;
+}
+
+#wj_today .today_title {
+  width: 100%;
+  height: 71px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+#wj_today .today_title h2 {
+  width: 150px;
+  height: 35px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  color: #000;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  /* background: url(../img/index/in_png.png) 0 -556px no-repeat; */
+}
+
+#wj_today .today_title div {
+  font-size: 16px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#wj_today .today_title div span {
+  color: #999;
+}
+
+#wj_today .today_title div a {
+  color: #a40c59;
+}
+
+#wj_today .today_content {
+  width: 100%;
+  height: 282px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+#wj_today .today_content .today_timer {
+  float: left;
+  width: 198px;
+  height: 280px;
+  background: #f9f7f7 url(../img/index/time_BJ.jpg) center 75px no-repeat;
+}
+
+#wj_today .today_content .today_timer p {
+  width: 198px;
+  height: 75px;
+  text-align: center;
+  color: #a40c59;
+  line-height: 74px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#wj_today .today_content .flash_goods {
+  float: left;
+  width: 200px;
+  height: 280px;
+}
+
+#wj_today .today_content .flash_goods dl {
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+
+#wj_today .today_content .flash_goods dl dt {
+  width: 200px;
+  float: left;
+  height: 200px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#wj_today .today_content .flash_goods dl dt a img {
+  width: 200px;
+  height: 209px;
+}
+
+#wj_today .today_content .flash_goods dl dd {
+  width: 200px;
+  float: left;
+  height: 60px;
+  border-right: 1px solid #ddd;
+}
+
+#wj_today .today_content .flash_goods dl dd div p {
+  width: 200px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #999;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+#wj_today .today_content .flash_goods dl dd div span {
+  display: block;
+  width: 180px;
+  padding-left: 20px;
+  height: 36px;
+  line-height: 36px;
+  color: #a21459;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+#wj_hot {
+  width: 1202px;
+  height: 452px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+#wj_hot h2 {
+  width: 100%;
+  height: 50px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: #000;
+  line-height: 50px;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+#wj_hot div {
+  height: 400px;
+  width: 1200px;
+  border: 1px solid #ddd;
+}
+
+#wj_hot div a {
+  display: block;
+  float: left;
+  width: 300px;
+  height: 400px;
+}
+
+#wj_hot div a img {
+  border-right: 1px solid #ddd;
+  width: 299px;
+  height: 400px;
+}
+
+#wj_transition {
+  margin: 0 auto;
+  width: 1200px;
+  height: 185px;
+  padding-bottom: 35px;
+}
+
+#wj_transition a,
+#wj_transition img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#wj_productwine {
+  margin: 0 auto;
+  height: 506px;
+  padding-bottom: 40px;
+  width: 1200px;
+}
+
+#wj_productwine .product_nav {
+  width: 100%;
+  height: 28px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+#wj_productwine .product_nav h2 {
+  margin-right: 20px;
+  float: left;
+  height: 33px;
+  line-height: 32px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#wj_productwine .product_nav ul {
+  margin-top: 13px;
+  float: left;
+}
+
+#wj_productwine .product_nav ul li {
+  margin-right: 20px;
+  float: left;
+}
+
+#wj_productwine .product_nav ul li a {
+  height: 20px;
+  line-height: 20px;
+  color: #999;
+}
+
+#wj_productwine .product_nav ul li a:hover {
+  text-decoration: underline;
+}
+
+#wj_productwine .product_nav .more {
+  margin-top: 13px;
+  float: right;
+}
+
+#wj_productwine .product_nav .more a {
+  color: #000;
+  font-size: 16px;
+}
+
+#wj_productwine .product_nav .more a:hover {
+  color: #c5166e;
+}
+
+#wj_productwine .product_content {
+  width: 100%;
+  height: 463px;
+}
+
+#wj_productwine .product_content .pro_img {
+  float: left;
+  width: 224px;
+  height: 100%;
+}
+
+#wj_productwine .product_content .pro_img a {
+  width: 224px;
+  height: 100%;
+}
+
+#wj_productwine .product_content .pro_img a img {
+  width: 224px;
+  height: 100%;
+}
+
+#wj_productwine .product_content .pro_listinfo {
+  float: left;
+  width: 974px;
+  height: 461px;
+  border: 1px solid #ddd;
+}
+
+#wj_productwine .product_content .pro_listinfo ul.pro_list {
+  float: left;
+  width: 764px;
+  height: 462px;
+}
+
+#wj_productwine .product_content .pro_listinfo ul.pro_list li {
+  float: left;
+  width: 190px;
+  height: 231px;
+  border-right: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  margin-top: -1px;
+}
+
+#wj_productwine .product_content .pro_listinfo ul.pro_list li div.pro_listimg {
+  width: 190px;
+  height: 180px;
+}
+
+#wj_productwine .product_content .pro_listinfo ul.pro_list li div.pro_listimg a {
+  display: block;
+  width: 190px;
+  height: 175px;
+  border-bottom: 5px;
+}
+
+#wj_productwine .product_content .pro_listinfo ul.pro_list li div.pro_listimg a img {
+  width: 165px;
+  height: 165px;
+  padding-top: 10px;
+}
+
+#wj_productwine .product_content .pro_listinfo ul.pro_list li div {
+  width: 190px;
+  height: 48px;
+  padding-top: 3px;
+}
+
+#wj_productwine .product_content .pro_listinfo ul.pro_list li div p {
+  width: 170px;
+  height: 18px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #ddd;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+}
+
+#wj_productwine .product_content .pro_listinfo ul.pro_list li div span {
+  display: block;
+  margin-left: 70px;
+  color: #a40c59;
+  font-size: 16px;
+}
+
+#wj_productwine .product_content .pro_listinfo .pro_hot {
+  float: left;
+  height: 461px;
+  width: 200px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#wj_productwine .product_content .pro_listinfo .pro_hot span {
+  color: #a21459;
+  font-size: 14px;
+  line-height: 40px;
+  height: 40px;
+  padding-left: 2px;
+  display: block;
+}
+
+#wj_productwine .product_content .pro_listinfo .pro_hot ul {
+  width: 200px;
+  height: 228px;
+  overflow: hidden;
+}
+
+#wj_productwine .product_content .pro_listinfo .pro_hot div {
+  width: 200px;
+  height: 193px;
+  border-top: 1px solid #ddd;
+}
+
+#wj_productwine .product_content .pro_listinfo .pro_hot div a {
+  width: 200px;
+  height: 32px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: -1px;
+  display: block;
+  line-height: 32px;
+  overflow: hidden;
+  color: #ddd;
+}
+
+#wj_productwine .product_content .pro_listinfo .pro_hot div a em {
+  width: 14px;
+  height: 14px;
+  background: #ccc;
+  display: block;
+  float: left;
+  margin: 8px 5px 0 5px;
+  text-align: center;
+  line-height: 14px;
+  color: #fff;
+}

@@ -1,0 +1,235 @@
+#header_tips {
+  width: 100%;
+  height: 38px;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  .hdtips_center {
+    width: 1200px;
+    height: 38px;
+    margin: 0 auto;
+    .hdtips_left ul {
+      float: left;
+      li {
+        height: 38px;
+        line-height: 38px;
+        float: left;
+        margin-right: 15px;
+        span {
+          color: #000;
+        }
+        a {
+          color: #999;
+          cursor: pointer;
+          &:hover {
+            color: #ae1219;
+          }
+        }
+        button {
+          background: none;
+          border: none;
+          font-size: 12px;
+          color: #999;
+          cursor: pointer;
+          &:hover {
+            color: #ae1219;
+          }
+        }
+      }
+    }
+    .hdtips_right ul {
+      float: right;
+      li {
+        margin: 10px 0;
+        height: 14px;
+        line-height: 14px;
+        float: left;
+        padding: 0 10px;
+        border-right: 1px dotted #ccc;
+        position: relative;
+        &:hover i {
+          background-position: -10px 0;
+        }
+        &:hover ul {
+          height: auto;
+          opacity: 1;
+          display: block;
+        }
+        a {
+          color: #999;
+          cursor: pointer;
+          &:hover {
+            color: #ae1219;
+          }
+        }
+        i {
+          width: 10px;
+          height: 6px;
+          float: right;
+          margin: 5px 0 0 5px;
+          background: url(../img/header/ico-2015-12.png) -10px -6px no-repeat;
+        }
+        ul {
+          position: absolute;
+          border: 1px solid #ccc;
+          background: #fff;
+          top: -23px;
+          left: -1px;
+          padding: 44px 10px 10px 16px;
+          z-index: 2;
+          width: 60px;
+          line-height: 20px;
+          overflow: hidden;
+          height: 0;
+          opacity: 0;
+          display: none;
+          transition: all 0.5s;
+        }
+        li {
+          width: 60px;
+          height: 20px;
+          line-height: 20px;
+          margin: 0 auto;
+          a {
+            color: #999;
+            &:hover {
+              color: #ae1219;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*------------------------- 登录框开始 ----------------------*/
+
+#user_login {
+  width: 600px;
+  height: 600px;
+}
+
+/*------------------------- 登录框结束 ---------------------*/
+
+#header_search {
+  width: 100%;
+  height: 130px;
+  background: #fff;
+  .hdsearch_center {
+    margin: 0 auto;
+    width: 1200px;
+    height: 130px;
+    a h1 {
+      width: 160px;
+      height: 90px;
+      float: left;
+      margin-top: 20px;
+      background: url(../img/header/leico.png) center no-repeat;
+    }
+    .hd_search {
+      float: left;
+      width: 530px;
+      height: 53px;
+      margin-top: 38px;
+      margin-left: 180px;
+      input {
+        float: left;
+        border: 1px solid #a40c59;
+        display: inline;
+        height: 28px;
+        line-height: 28px;
+        padding: 0 80px 0 10px;
+        width: 378px;
+        color: #666;
+      }
+      .hd_searchinput a {
+        float: left;
+        width: 60px;
+        height: 30px;
+        background: url(../img/header/btn-search.png) center no-repeat;
+      }
+      ul {
+        margin-top: 10px;
+        li {
+          float: left;
+          a {
+            color: #999;
+            &:hover {
+              color: #ae1219;
+            }
+          }
+        }
+      }
+    }
+    .hd_cart {
+      height: 28px;
+      width: 154px;
+      float: right;
+      margin-top: 38px;
+      border: 1px solid #a40c59;
+      a {
+        color: #999;
+        .my_cart {
+          height: 30px;
+          float: left;
+          line-height: 30px;
+          display: inline;
+          background: #a40c59 url(../img/header/ico-2015-12.png) 10px -47px no-repeat;
+          width: 70px;
+          padding-left: 40px;
+        }
+        .goods_num {
+          float: left;
+          width: 6px;
+          height: 30px;
+          line-height: 30px;
+          margin-left: 10px;
+        }
+        i {
+          height: 6px;
+          width: 10px;
+          float: left;
+          margin-top: 12px;
+          margin-left: 10px;
+          background: url(../img/header/ico-2015-12.png) -20px -6px no-repeat;
+        }
+      }
+    }
+  }
+}
+
+#header_nav {
+  width: 100%;
+  height: 30px;
+  border-bottom: 1px solid #a21459;
+  ul {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    li.hd_allgoods {
+      position: relative;
+      width: 166px;
+      margin-right: 25px;
+      background: #222 url(../img/header/ico-2015-12.png) 130px -573px no-repeat;
+      &:hover {
+        background: #222 url(../img/header/ico-2015-12.png) 130px -547px no-repeat;
+      }
+      a.a_allgoods {
+        color: #fff;
+        background: url(../img/header/ico-2015-12.png) 3px -610px no-repeat;
+        line-height: 28px;
+        padding-left: 35px;
+      }
+    }
+    li {
+      float: left;
+      height: 30px;
+      a {
+        color: #444;
+        font-size: 16px;
+        margin-right: 30px;
+        height: 30px;
+        line-height: 30px;
+      }
+    }
+  }
+}
