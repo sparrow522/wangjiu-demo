@@ -382,3 +382,53 @@
   line-height: 14px;
   color: #fff;
 }
+
+/*----------- floornav start ---------------*/
+#floor_nav {
+  width: 30px;
+  height: 280px;
+  position: fixed;
+  left: 8%;
+  top: 300px;
+  display: none;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  background: #fff url(../img/index/row.png);
+}
+
+#floor_nav ul li {
+  width: 30px;
+  height: 40px;
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+  cursor: pointer;
+  position: relative;
+}
+
+#floor_nav ul li:hover span {
+  background: #c00;
+  color: #fff;
+  display: block;
+}
+
+#floor_nav ul li:hover span.active {
+  background: #c00;
+  color: #fff;
+  display: block;
+}
+
+#floor_nav ul li span {
+  width: 30px;
+  height: 40xp;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  text-align: center;
+}
+
+#floor_nav ul li span.active {
+  background: #fff;
+  color: #c00;
+  display: block;
+}

@@ -1,0 +1,210 @@
+.reg_top {
+  width: 100%;
+  height: 90px;
+  border-bottom: 1px solid #eee;
+}
+
+.reg_top .reg_toplogo {
+  width: 1440px;
+  height: 90px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.reg_top .reg_toplogo a img {
+  margin: 30px 0 0 45px;
+  background-image: none;
+  height: 47px;
+  width: auto;
+}
+
+.reg_top .reg_toplogo ul {
+  height: 20px;
+  position: absolute;
+  top: 59px;
+  right: 45px;
+  font-size: 14px;
+  color: #a4a4a4;
+}
+
+.reg_top .reg_toplogo ul li {
+  height: 20px;
+  line-height: 20px;
+  float: left;
+  border-right: 1px solid #a4a4a4;
+  padding: 0 10px;
+}
+
+.reg_top .reg_toplogo ul li a {
+  text-decoration: underline;
+  color: #a4a4a4;
+}
+
+.reg_top .reg_toplogo ul li a:hover {
+  color: blue;
+}
+
+.reg_top .reg_toplogo ul li.help {
+  border: none;
+}
+
+.reg_content {
+  width: 100%;
+  height: 483px;
+  background: url(../img/reg/2.jpg) no-repeat;
+}
+
+.reg_content .reg_box {
+  width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.reg_content .reg_box .reg_user {
+  width: 430px;
+  height: 460px;
+  background: #fff;
+  float: right;
+  margin-right: 10px;
+  margin-top: 14px;
+  position: relative;
+}
+
+.reg_content .reg_box .reg_user .reg_userbox {
+  width: 380px;
+  height: 368px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.reg_content .reg_box .reg_user .reg_userbox p {
+  width: 380px;
+  height: 24px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top: 11px;
+}
+
+.reg_content .reg_box .reg_user .reg_userbox p span {
+  float: left;
+  color: #333;
+  font-size: 18px;
+}
+
+.reg_content .reg_box .reg_user .reg_userbox p a {
+  color: #529bef;
+  float: right;
+  font-size: 14px;
+}
+
+.reg_content .reg_box .reg_user .reg_userbox .reg_userform {
+  width: 380px;
+  height: 305px;
+  margin-top: 23px;
+}
+
+.reg_content .reg_box .reg_user .reg_userbox .reg_userform ul {
+  width: 380px;
+  height: 305px;
+}
+
+.reg_content .reg_box .reg_user .reg_userbox .reg_userform ul li.form_input {
+  width: 378px;
+  height: 42px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+.reg_content .reg_box .reg_user .reg_userbox .reg_userform ul li.form_input i {
+  display: inline-block;
+  float: left;
+  width: 25px;
+  height: 29px;
+  margin-top: 6px;
+  margin-left: 14px;
+  background: url(../img/reg/2.png) 4px 5px no-repeat;
+}
+
+.reg_content .reg_box .reg_user .reg_userbox .reg_userform ul li.form_input i.pwd {
+  display: inline-block;
+  float: left;
+  width: 25px;
+  height: 29px;
+  margin-top: 6px;
+  margin-left: 14px;
+  background: url(../img/reg/2.png) -198px 3px no-repeat;
+}
+
+.reg_content .reg_box .reg_user .reg_userbox .reg_userform ul li.form_input input {
+  width: 270px;
+  height: 23px;
+  padding-top: 9px;
+  padding-bottom: 10px;
+  line-height: 22px;
+}
+
+.reg_content .reg_box .reg_user .reg_userbox .reg_userform ul li.input_code {
+  width: 378px;
+  height: 42px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+.reg_content .reg_box .reg_user .reg_userbox .reg_userform ul li.verify_code {
+  width: 380px;
+  height: 42px;
+}
+
+.reg_content .reg_box .reg_user .reg_userbox .reg_userform ul li.verify_code span {
+  width: 228px;
+  margin-bottom: 0;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #ccc;
+}
+
+.reg_content .reg_box .reg_user .reg_userbox .reg_userform ul li.verify_code a {
+  height: 40px;
+  line-height: 40px;
+  width: 134px;
+  float: right;
+  display: block;
+  color: #419ce3;
+  border: 1px solid #419ce3;
+  text-align: center;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+.reg_content .reg_box .reg_user .reg_userbox .reg_userform ul li.agree {
+  width: 380px;
+  height: 22px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+.reg_content .reg_box .reg_user .reg_userbox .reg_userform ul li.agree label {
+  width: 363px;
+  height: 22px;
+}
+
+.reg_content .reg_box .reg_user .reg_userbox .reg_userform ul li.user_reg {
+  width: 380px;
+  height: 42px;
+}
+
+.reg_content .reg_box .reg_user .reg_userbox .reg_userform ul li.user_reg a {
+  width: 376px;
+  height: 38px;
+  border: 2px solid #009de6;
+  background: #009de6;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  display: block;
+  line-height: 38px;
+}

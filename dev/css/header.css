@@ -106,37 +106,22 @@
   transition: all 0.5s;
 }
 
-#header_tips .hdtips_center .hdtips_right ul li li {
+#header_tips .hdtips_center .hdtips_right ul li ul li {
   width: 60px;
   height: 20px;
   line-height: 20px;
+  text-align: center;
   margin: 0 auto;
 }
 
-#header_tips .hdtips_center .hdtips_right ul li li a {
+#header_tips .hdtips_center .hdtips_right ul li ul li a {
   color: #999;
 }
 
-#header_tips .hdtips_center .hdtips_right ul li li a:hover {
+#header_tips .hdtips_center .hdtips_right ul li ul li a:hover {
   color: #ae1219;
 }
 
-/*------------------------- 登录框开始 ----------------------*/
-.ui-dialog {
-  width: 400px;
-  height: 400px;
-}
-
-.ui-dialog-titlebar {
-  display: none;
-}
-
-userlogin {
-  width: 600px;
-  height: 600px;
-}
-
-/*------------------------- 登录框结束 ---------------------*/
 #header_search {
   width: 100%;
   height: 130px;
@@ -268,6 +253,122 @@ userlogin {
   padding-left: 35px;
 }
 
+#header_nav ul li.hd_allgoods ul {
+  position: absolute;
+  left: 0;
+  top: 30px;
+  width: 166px;
+  background: #f8f8f8;
+  height: 400px;
+  z-index: 100;
+}
+
+#header_nav ul li.hd_allgoods ul li {
+  margin-left: 4px;
+  width: 160px;
+  height: 59px;
+}
+
+#header_nav ul li.hd_allgoods ul li:hover div.box {
+  display: block;
+}
+
+#header_nav ul li.hd_allgoods ul li h2 {
+  background-image: url(../img/header/sorticon_xuan.png);
+  color: #414141;
+  font-size: 14px;
+  line-height: 49px;
+  width: 122px;
+  padding-left: 40px;
+  height: 49px;
+  border-bottom: 1px solid #e4e4e4;
+  background-repeat: no-repeat;
+  background-position: 0 center;
+}
+
+#header_nav ul li.hd_allgoods ul li h2:hover {
+  background: #5f5764;
+}
+
+#header_nav ul li.hd_allgoods ul li div.box {
+  position: absolute;
+  top: 0;
+  left: 166px;
+  display: none;
+  width: 690px;
+  height: 390px;
+  left: 166px;
+  padding-top: 10px;
+  background: #fff;
+  position: absolute;
+  z-index: 2;
+  border-top: 1px solid #a21459;
+}
+
+#header_nav ul li.hd_allgoods ul li div.box div.img {
+  float: right;
+  width: 275px;
+  height: 350px;
+  padding-right: 5px;
+}
+
+#header_nav ul li.hd_allgoods ul li div.box div.img img {
+  width: 280px;
+  height: 350px;
+}
+
+#header_nav ul li.hd_allgoods ul li div.box div.list {
+  line-height: 20px;
+  width: 280px;
+  height: 187px;
+  margin-left: 30px;
+}
+
+#header_nav ul li.hd_allgoods ul li div.box div.list b {
+  display: block;
+  width: 280px;
+  height: 20px;
+  border-bottom: 1px solid #e4e4e4;
+  padding-top: 10px;
+  font-size: 12px;
+  color: #a40c59;
+}
+
+#header_nav ul li.hd_allgoods ul li div.box div.list a {
+  display: inline-block;
+  float: left;
+  color: #666;
+  height: 20px;
+  font-size: 12px;
+  padding-right: 5px;
+}
+
+#header_nav ul li.hd_allgoods ul li div.box div.price {
+  width: 280px;
+  height: 75px;
+  line-height: 20px;
+  margin-left: 30px;
+}
+
+#header_nav ul li.hd_allgoods ul li div.box div.price b {
+  display: block;
+  width: 280px;
+  height: 20px;
+  border-bottom: 1px solid #e4e4e4;
+  padding-top: 10px;
+  font-size: 12px;
+  color: #a40c59;
+}
+
+#header_nav ul li.hd_allgoods ul li div.box div.price a {
+  display: inline-block;
+  float: left;
+  color: #666;
+  height: 20px;
+  font-size: 12px;
+  padding-right: 5px;
+}
+
 #header_nav ul li {
   float: left;
   height: 30px;
@@ -280,3 +381,68 @@ userlogin {
   height: 30px;
   line-height: 30px;
 }
+
+/*------- 登录开始 -----*/
+#loginbg {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  height: 100%;
+  width: 100%;
+  background: #000000;
+  filter: alpha(opacity=30);
+  -moz-opacity: 0.3;
+  opacity: 0.3;
+}
+
+#login {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  width: 293px;
+  z-index: 201;
+  background: #FFFFFF;
+}
+
+#login h2 input {
+  height: 18px;
+  width: 18px;
+  float: right;
+  border: none;
+  cursor: pointer;
+  margin: 2px 6px 0 0;
+}
+
+#login h2 a {
+  display: block;
+  float: left;
+  width: 83px;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  text-decoration: none;
+  color: #666;
+}
+
+#login h2 a.cur {
+  color: #f00;
+}
+
+#login ul {
+  padding: 14px 0 18px 12px;
+  li: after;
+}
+
+#login ul li {
+  padding-left: 60px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+#login ul li {
+  display: block;
+}
+
+/*------- 登录结束 -----*/

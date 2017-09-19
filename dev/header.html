@@ -1,19 +1,186 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="icon" href="img/title/wj.ico" type="image/x-icon" />
-  <link rel="shortcut icon" href="img/title/wj.ico" type="image/x-icon" />
-  <title>header</title>
-  <link rel="stylesheet" href="css/jquery-ui.css">
+<div>
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/header.css">
-</head>
+  <!--********************** css login start **************************-->
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+      font-size: 12px;
+      font-weight: normal;
+      font-family: verdana, tahoma, helvetica, arial, sans-serif, "宋体";
+      font-style: normal;
+      list-style-type: none;
+      text-decoration: none;
+    }
 
-<body>
+    #loginbg {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 200;
+      height: 100%;
+      width: 100%;
+      background: #000000;
+      filter: alpha(opacity=30);
+      -moz-opacity: 0.3;
+      opacity: 0.3;
+    }
+
+    #login {
+      position: absolute;
+      margin: 0 auto;
+      top: 14%;
+      left: 34%;
+      width: 473px;
+      height: 570px;
+      z-index: 201;
+      background: #FFFFFF url(img/login/1.jpg) no-repeat;
+    }
+
+    #login h2 input {
+      height: 18px;
+      width: 18px;
+      float: right;
+      border: none;
+      cursor: pointer;
+      margin: 2px 6px 0 0;
+    }
+
+    #login h2 a {
+      display: block;
+      float: left;
+      width: 83px;
+      height: 26px;
+      line-height: 26px;
+      text-align: center;
+      text-decoration: none;
+      color: #666;
+    }
+
+    #login h2 a.cur {
+      color: #f00;
+    }
+
+    #login ul {
+      padding: 14px 0 18px 12px;
+    }
+
+    #login ul li {
+      padding-left: 60px;
+      margin-top: 10px;
+      display: inline-block;
+    }
+
+    #login ul li {
+      display: block;
+    }
+
+    #login ul li:after {
+      content: "youdian";
+      clear: both;
+      display: block;
+      height: 0;
+      visibility: hidden;
+    }
+
+    #login ul li tt {
+      float: left;
+      width: 60px;
+      margin-left: -70px;
+      text-align: right;
+      line-height: 22px;
+      color: #444;
+    }
+
+    #login ul li div input.cell,
+    #login ul li div input.cell2 {
+      height: 16px;
+      padding: 2px;
+      line-height: 16px;
+      width: 179px;
+      border: 1px #dcdcdc solid;
+      color: #666;
+    }
+
+    #login ul li div input.cell2 {
+      width: 50px;
+    }
+
+    #login ul li div label {
+      color: #666;
+      cursor: pointer;
+    }
+
+    #login ul li div img {
+      margin-bottom: -7px;
+      margin-left: 8px;
+    }
+
+    * html #login ul li div img {
+      margin-bottom: -4px;
+    }
+
+    *+html #login ul li div img {
+      margin-bottom: -4px;
+    }
+
+    #login ul li div input#fnlogin {
+      width: 59px;
+      height: 21px;
+      cursor: pointer;
+      border: none;
+      margin-right: 15px;
+    }
+
+    #login ul li p {
+      padding-top: 4px;
+      color: #f00;
+    }
+  </style>
+  <!--********************** css login end **************************-->
+  <!--********************** script login start **************************-->
+  <script>
+    function open_login() {
+      document.getElementById('loginbg').style.display = 'block';
+      document.getElementById('login').style.display = 'block';
+      showloginbg();
+    }
+
+    function showloginbg() {
+      var sWidth, sHeight;
+      sWidth = screen.width;
+      sWidth = document.body.offsetWidth;
+      sHeight = document.body.offsetHeight;
+      if (sHeight < screen.height) {
+        sHeight = screen.height;
+      }
+      document.getElementById("loginbg").style.width = sWidth + "px";
+      document.getElementById("loginbg").style.height = sHeight + "px";
+      document.getElementById("loginbg").style.display = "block";
+      document.getElementById("loginbg").style.display = "block";
+      document.getElementById("loginbg").style.right = document.getElementById("login").offsetLeft + "px";
+    }
+
+    function close_login() {
+      document.getElementById('loginbg').style.display = 'none';
+      document.getElementById('login').style.display = 'none';
+    }
+
+    function logo_in() {
+      alert()
+      //验证
+      //转向...
+      //myform.action=""
+      //myform.submit()
+      close_login();
+    };
+  </script>
+  <!--********************** script login end **************************-->
+
+
+  <!--**************** header tips start ********************-->
   <div id="header_tips">
     <div class="hdtips_center">
       <div class="hdtips_left">
@@ -22,7 +189,7 @@
           <li>
             <a href="javascript: void 0">快速注册</a>
             <!-- <a href="javascript: void 0">登录</a> -->
-            <button id="user_login">登录</button>
+            <button id="user_login" onclick="open_login()">登录</button>
           </li>
           <li><a href="javascript: void 0">手机网酒网</a></li>
         </ul>
@@ -30,7 +197,8 @@
       <div class="hdtips_right">
         <ul>
           <li>
-            <a href="javascript: void 0">我的网酒</a><i></i>
+            <a href="javascript: void 0">我的网酒</a>
+            <i></i>
             <ul>
               <li><a href="javascript: void(0)">我的订单</a></li>
               <li><a href="javascript: void(0)">我的订单</a></li>
@@ -47,11 +215,47 @@
       </div>
     </div>
   </div>
+  <!--**************** header tips end ********************-->
   <!--******************* 登录框开始 **********************-->
-  <div id="dialog_userlogin">
-   
+  <div id="loginbg"></div>
+  <div id="login" style="display:none;">
+    <h2>
+      <input style="display: block; width: 40px; height: 40px; position: absolute; top: 10px; right: 10px; background: #fff; font-size: 24px; color: #A7A7A7;"
+        id="close_login" type="button" title="退出登录" value="x" onclick="close_login()">
+      <img style="display: block; width: 95px; height: 37px; margin: 26px auto 10px;;" src="img/login/2.png" alt="">
+      <p style="margin-left: 140px; font-size: 16px; color: #333; ">一个账号玩转所有乐视服务</p>
+      <a style="float: left; display: block; font-size: 20px; margin-left: 30px;letter-spacing: 10px; margin-top: 10px;">登录</a>
+      <div style="margin-top: 15px; margin-left: 190px;float:left; background: url(img/login/3.png) no-repeat; width: 9px; height: 16px;"></div>
+      <a href="javascript: void(0);" style="display: block;float: right;font-size: 14px; width: 120px;margin-right: 40px; margin-top: 10px; color: #529BEF">短信验证码登录</a>
+    </h2>
+      <form style="margin-top: 70px" id="LoginForm" name="LoginForm" action="" method="post" enctype="multipart/form-data">
+        <div style="width: 379px; height: 42px; border: 1px solid #ccc;margin-left: 30px;">
+          <div style="float:left; background:url(img/login/5.png);width: 25px; height: 29px;margin-top: 7px; margin-left: 8px;"></div>
+          <input placeholder="邮箱/手机号" style="font-size: 16px;border:0;margin-left:10px; padding-left: 10px; float:left; width: 270px;height: 42px;" id="username" name="username" type="text"
+          />
+          <div style="float:left; width: 32px;height: 27px; background: url(img/login/6.png); margin-left: 10px; margin-top: 10px;"></div>
+        </div>
+        <div style="width: 379px; height: 42px; border: 1px solid #ccc; margin-top: 30px; margin-left: 30px;">
+          <div style="float:left;background:url(img/login/5.png);width: 25px; height: 29px;margin-top: 7px; margin-left: 8px;"></div>
+          <input placeholder="密码" style="font-size: 16px;border:0; margin-left:10px; padding-left: 10px;float:left;width: 270px;height: 42px;" id="username" name="username" type="text"
+          />
+        </div>
+        <div>
+          <input style="margin-left: 30px; margin-top: 16px;font-size: 14px;" type="checkbox"><span>记住登录状态</span>
+          <input style="margin-left: 200px; color:#529BEF;font-size: 16px; background: none;" type="button" value="重置密码">
+        </div>
+        <div>
+          <input style="margin-top: 20px; width: 379px; height: 42px; margin-left: 30px; color:#fff; font-size: 18px; background:#529BEF; letter-spacing: 20px;" type="button" name="" id="" value="登录">
+        </div>
+        <div style="margin-left: 80px; margin-top: 50px;">
+          <span style="font-size: 14px;">从这里出发，开启乐视生态世界</span>
+          <a style="font-size: 14px; color: #529BEF" href="reg.html">立即注册</a>
+        </div>
+        <div style=" margin-top: 10px;width: 460px; height: 80px; background: url(img/login/7.jpg) no-repeat"></div>
+      </form>
   </div>
   <!--******************* 登录框结束 **********************-->
+  <!--**************** header search start ********************-->
   <div id="header_search">
     <div class="hdsearch_center">
       <a href="javascript: void(0)">
@@ -82,10 +286,133 @@
       </div>
     </div>
   </div>
+  <!--**************** header search end ********************-->
+  <!--**************** header nav start ********************-->
   <div id="header_nav">
     <ul>
       <li class="hd_allgoods">
         <a class="a_allgoods" href="javascript: void(0)">全部商品</a>
+        <ul>
+          <li>
+            <h2>一键选购</h2>
+            <div class="box">
+              <div class="img">
+                <img src="img/header/1.png" alt="">
+              </div>
+              <div class="list">
+                <b>一键选购</b>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <br>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <br>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <br>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <br>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <br>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+              </div>
+              <div class="price">
+                <b>价格区间</b>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <br>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <h2>一键选购</h2>
+            <div class="box">
+              <div class="img">
+                <img src="img/header/1.png" alt="">
+              </div>
+              <div class="list">
+                <b>一键选购</b>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <br>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <br>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <br>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <br>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <br>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+              </div>
+              <div class="price">
+                <b>价格区间</b>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <br>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <h2>一键选购</h2>
+          </li>
+          <li>
+            <h2>一键选购</h2>
+          </li>
+          <li>
+            <h2>一键选购</h2>
+          </li>
+          <li>
+            <h2>一键选购</h2>
+          </li>
+          <li>
+            <h2>一键选购</h2>
+          </li>
+        </ul>
       </li>
       <li><a class="hd_nav" href="javascript: void(0)">首页</a></li>
       <li><a class="hd_nav" href="javascript: void(0)">名庄臻选</a></li>
@@ -95,7 +422,6 @@
       <li><a class="hd_nav" href="javascript: void(0)">RVF评分</a></li>
     </ul>
   </div>
+  <!--**************** header nav start ********************-->
   <script data-main="header.js" src="js/require.js"></script>
-</body>
-
-</html>
+</div>

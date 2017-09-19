@@ -1,0 +1,73 @@
+/*----------- right_frame start ---------------*/
+
+#right_frame {
+  position: fixed;
+  width: 34px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background: rgba(160, 20, 89, 0.9);
+  z-index: 1000;
+  ul.cart {
+    position: absolute;
+    top: 38%;
+    right: 0;
+    width: 34px;
+    height: 204px;
+    li {
+      width: 34px;
+      height: 34px;
+      a {
+        display: block;
+        width: 34px;
+        height: 34px;
+        background: #c5166e url(../img/index/ico.png) 2px -145px no-repeat;
+        p {
+          border: 1px solid #a40c59;
+          color: #a40c59;
+          position: absolute;
+          z-index: 1;
+          right: 7px;
+          top: -7px;
+          background: #fff;
+          height: 13px;
+          line-height: 13px;
+          min-width: 13px;
+          border-radius: 6px;
+          text-align: center;
+          padding: 0 1px;
+        }
+      }
+    }
+  }
+  ul.phone {
+    li.phone {
+      width: 34px;
+      height: 34px;
+      a {
+        display: block;
+        width: 34px;
+        height: 34px;
+        position: absolute;
+        bottom: 34px;
+        right: 0;
+        background: #c5166e url(../img/index/ico.png) 2px -515px no-repeat;
+      }
+    }
+    li.top {
+      width: 34px;
+      height: 34px;
+      display: block;
+      a {
+        position: absolute;
+        width: 34px;
+        height: 34px;
+        bottom: 0;
+        right: 0;
+        background: #c5166e url(../img/index/ico.png) 2px -304px no-repeat;
+      }
+    }
+  }
+}
+
+/*----------- right_frame end ---------------*/

@@ -130,6 +130,66 @@
           }
         }
       }
+      .detail_sale {
+        width: 720px;
+        height: 30px;
+        margin: 20px 0 20px 16px;
+        div.sale {
+          width: 90px;
+          height: 100%;
+          float: left;
+          line-height: 30px;
+          color: #333;
+        }
+        div.sub {
+          float: left;
+          width:40px;
+          height: 100%;
+          line-height: 30px;
+          background: #ca0814;
+          color: #fff;
+          font-size: 14px;
+          text-align: center;
+          margin-right: 10px;
+        }
+        div.activity {
+          float: left;
+          height: 30px;
+          line-height: 30px;
+          color: #333;
+        }
+      }
+      .detail_delivery {
+        width: 720px;
+        height: 40px;
+        div.to {
+          height: 40px;
+          line-height: 40px;
+          float: left;
+          margin-left: 16px;
+        }
+        input {
+          margin-left: 10px;
+          float: left;
+          height: 40px;
+          line-height: 40px;
+          padding-left: 10px;
+          border: 1px solid #eee;
+        }
+        div.isgoods {
+          float: left;
+          height: 40px;
+          line-height: 40px;
+          margin-left: 10px;
+        }
+      }
+      .detail_where {
+        margin-left:80px;
+        margin-top: 10px;
+        font-size: 14px;
+        height: 40px;
+        line-height: 40px;
+      }
     }
   }
 }

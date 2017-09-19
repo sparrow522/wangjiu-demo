@@ -1,9 +1,13 @@
 require(["js/config"], function() {
-  require(["jquery"], function($) {
-    // 加载 header
-    $("#header").load("http://localhost:8080/dev/header.html");
-    // 加载 footer
-    $("#footer").load("http://localhost:8080/dev/footer.html");
+  require(["jquery", "header"], function($) {
+    $(function() {
+      // 右侧边栏
+      $("#right_frame").load("http://localhost:8080/dev/rightframe.html", function() {});
+      // 加载 header
+      $("#header").load("http://localhost:8080/dev/header.html", function() {});
+      // 加载 footer
+      $("#footer").load("http://localhost:8080/dev/footer.html");
+    });
     /*------------------------ 放大镜开始 ------------------------*/
     $(window).load(function() {
       var $smallImg = $(".detail_smallimg:first"); //小图

@@ -152,3 +152,72 @@
 .detail_warp .detail_goods .detail_content .detail_price a:hover {
   color: #a50158;
 }
+
+.detail_warp .detail_goods .detail_content .detail_sale {
+  width: 720px;
+  height: 30px;
+  margin: 20px 0 20px 16px;
+}
+
+.detail_warp .detail_goods .detail_content .detail_sale div.sale {
+  width: 90px;
+  height: 100%;
+  float: left;
+  line-height: 30px;
+  color: #333;
+}
+
+.detail_warp .detail_goods .detail_content .detail_sale div.sub {
+  float: left;
+  width: 40px;
+  height: 100%;
+  line-height: 30px;
+  background: #ca0814;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.detail_warp .detail_goods .detail_content .detail_sale div.activity {
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  color: #333;
+}
+
+.detail_warp .detail_goods .detail_content .detail_delivery {
+  width: 720px;
+  height: 40px;
+}
+
+.detail_warp .detail_goods .detail_content .detail_delivery div.to {
+  height: 40px;
+  line-height: 40px;
+  float: left;
+  margin-left: 16px;
+}
+
+.detail_warp .detail_goods .detail_content .detail_delivery input {
+  margin-left: 10px;
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 10px;
+  border: 1px solid #eee;
+}
+
+.detail_warp .detail_goods .detail_content .detail_delivery div.isgoods {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 10px;
+}
+
+.detail_warp .detail_goods .detail_content .detail_where {
+  margin-left: 80px;
+  margin-top: 10px;
+  font-size: 14px;
+  height: 40px;
+  line-height: 40px;
+}
