@@ -45,9 +45,9 @@ gulp.task("js", function() {
 //监听任务
 gulp.task("watch", function() {
   //让connect启动一个服务器，这样它才能即时刷新浏览器
-  connect.server({
+  /* connect.server({
     livereload: true
-  });
+  }); */
 
   //检测文件的变化，执行相应的任务
   gulp.watch("./dev/*.html", ["refreshHTML"]);
@@ -69,15 +69,24 @@ gulp.task("webserver", function() {
       middleware: [
         proxy("/api", {
           target: "http://api.wangjiu.com/",
-          changeOrigin: true,
+          changeOrigin: true
           /* pathRewrite: {
-            api: ""
+            "^/api": ""
           } */
         })
+        // proxy("/pic", {
+        //   target: "http://pic.ulecdn.com",
+        //   changeOrigin: true
+        //   /* pathRewrite: {
+        //     "^/pic": ""
+        //   } */
+        // })
       ]
     })
   );
 });
+
+
 
 //生成最终项目
 gulp.task("create", function() {

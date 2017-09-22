@@ -1,6 +1,7 @@
 <div>
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
   <!--********************** css login start **************************-->
   <style type="text/css">
     * {
@@ -178,8 +179,6 @@
     };
   </script>
   <!--********************** script login end **************************-->
-
-
   <!--**************** header tips start ********************-->
   <div id="header_tips">
     <div class="hdtips_center">
@@ -207,10 +206,28 @@
               <li><a href="javascript: void(0)">我的订单</a></li>
             </ul>
           </li>
-          <li><a href="javascript: void 0">会员俱乐部</a><i></i></li>
+          <li><a href="javascript: void 0">会员俱乐部</a><i></i><ul>
+            <li><a href="javascript: void(0)">我的订单</a></li>
+            <li><a href="javascript: void(0)">我的订单</a></li>
+            <li><a href="javascript: void(0)">我的订单</a></li>
+            <li><a href="javascript: void(0)">我的订单</a></li>
+            <li><a href="javascript: void(0)">我的订单</a></li>
+          </ul></li>
           <li><a href="javascript: void 0" style="color:#ae1219;">提货卡</a></li>
-          <li><a href="javascript: void 0">乐视生态</a><i></i></li>
-          <li><a href="javascript: void 0">更多频道</a><i></i></li>
+          <li><a href="javascript: void 0">乐视生态</a><i></i><ul>
+            <li><a href="javascript: void(0)">我的订单</a></li>
+            <li><a href="javascript: void(0)">我的订单</a></li>
+            <li><a href="javascript: void(0)">我的订单</a></li>
+            <li><a href="javascript: void(0)">我的订单</a></li>
+            <li><a href="javascript: void(0)">我的订单</a></li>
+          </ul></li>
+          <li><a href="javascript: void 0">更多频道</a><i></i><ul>
+            <li><a href="javascript: void(0)">我的订单</a></li>
+            <li><a href="javascript: void(0)">我的订单</a></li>
+            <li><a href="javascript: void(0)">我的订单</a></li>
+            <li><a href="javascript: void(0)">我的订单</a></li>
+            <li><a href="javascript: void(0)">我的订单</a></li>
+          </ul></li>
         </ul>
       </div>
     </div>
@@ -231,13 +248,13 @@
       <form style="margin-top: 70px" id="LoginForm" name="LoginForm" action="" method="post" enctype="multipart/form-data">
         <div style="width: 379px; height: 42px; border: 1px solid #ccc;margin-left: 30px;">
           <div style="float:left; background:url(img/login/5.png);width: 25px; height: 29px;margin-top: 7px; margin-left: 8px;"></div>
-          <input placeholder="邮箱/手机号" style="font-size: 16px;border:0;margin-left:10px; padding-left: 10px; float:left; width: 270px;height: 42px;" id="username" name="username" type="text"
+          <input id="username" placeholder="用户名" style="font-size: 16px;border:0;margin-left:10px; padding-left: 10px; float:left; width: 270px;height: 42px;" id="username" name="username" type="text"
           />
           <div style="float:left; width: 32px;height: 27px; background: url(img/login/6.png); margin-left: 10px; margin-top: 10px;"></div>
         </div>
         <div style="width: 379px; height: 42px; border: 1px solid #ccc; margin-top: 30px; margin-left: 30px;">
           <div style="float:left;background:url(img/login/5.png);width: 25px; height: 29px;margin-top: 7px; margin-left: 8px;"></div>
-          <input placeholder="密码" style="font-size: 16px;border:0; margin-left:10px; padding-left: 10px;float:left;width: 270px;height: 42px;" id="username" name="username" type="text"
+          <input id="pwd" placeholder="密码" style="font-size: 16px;border:0; margin-left:10px; padding-left: 10px;float:left;width: 270px;height: 42px;" id="username" name="username" type="text"
           />
         </div>
         <div>
@@ -245,7 +262,7 @@
           <input style="margin-left: 200px; color:#529BEF;font-size: 16px; background: none;" type="button" value="重置密码">
         </div>
         <div>
-          <input style="margin-top: 20px; width: 379px; height: 42px; margin-left: 30px; color:#fff; font-size: 18px; background:#529BEF; letter-spacing: 20px;" type="button" name="" id="" value="登录">
+          <input id="index_userlogin" style="margin-top: 20px; width: 379px; height: 42px; margin-left: 30px; color:#fff; font-size: 18px; background:#529BEF; letter-spacing: 20px;" type="button" name="" id="" value="登录">
         </div>
         <div style="margin-left: 80px; margin-top: 50px;">
           <span style="font-size: 14px;">从这里出发，开启乐视生态世界</span>
@@ -263,22 +280,22 @@
       </a>
       <div class="hd_search">
         <div class="hd_searchinput">
-          <input type="text" value="kkkkk">
+          <input name="search" id="search" type="text" placeholder="赏轩辕剑，品火玫瑰，6支低至299元个&gt;&gt;">
           <a href="javascript: void(0)"></a>
         </div>
         <div>
           <ul>
-            <li><a href="javascript: void(0)">葡萄酒</a></li>
-            <li><a href="javascript: void(0)">&nbsp;/葡萄酒</a></li>
-            <li><a href="javascript: void(0)">&nbsp;/葡萄酒</a></li>
-            <li><a href="javascript: void(0)">&nbsp;/葡萄酒</a></li>
-            <li><a href="javascript: void(0)">&nbsp;/葡萄酒</a></li>
-            <li><a href="javascript: void(0)">&nbsp;/葡萄酒</a></li>
+            <li><a href="javascript: void(0)">葡萄酒&nbsp;/</a></li>
+            <li><a href="javascript: void(0)">白酒&nbsp;/</a></li>
+            <li><a href="javascript: void(0)">起泡酒&nbsp;/</a></li>
+            <li><a href="javascript: void(0)">轩尼诗&nbsp;/</a></li>
+            <li><a href="javascript: void(0)">买酒送手机&nbsp;/</a></li>
+            <li><a href="javascript: void(0)">名庄&nbsp;</a></li>
           </ul>
         </div>
       </div>
       <div class="hd_cart">
-        <a href="javascript:void(0)">
+        <a href="cart.html">
           <div class="my_cart">我的购物车</div>
           <div class="goods_num">1</div>
           <i></i>
@@ -290,9 +307,9 @@
   <!--**************** header nav start ********************-->
   <div id="header_nav">
     <ul>
-      <li class="hd_allgoods">
+      <li id="mj_a_allgoods" class="hd_allgoods">
         <a class="a_allgoods" href="javascript: void(0)">全部商品</a>
-        <ul>
+        <ul id="mj_ul_goodslist">
           <li>
             <h2>一键选购</h2>
             <div class="box">
@@ -346,7 +363,7 @@
             </div>
           </li>
           <li>
-            <h2>一键选购</h2>
+            <h2>生活世界</h2>
             <div class="box">
               <div class="img">
                 <img src="img/header/1.png" alt="">
@@ -398,19 +415,264 @@
             </div>
           </li>
           <li>
-            <h2>一键选购</h2>
+            <h2>葡萄酒</h2>
+            <div class="box">
+              <div class="img">
+                <img src="img/header/1.png" alt="">
+              </div>
+              <div class="list">
+                <b>一键选购</b>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <br>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <br>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <br>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <br>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <br>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+              </div>
+              <div class="price">
+                <b>价格区间</b>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <br>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+              </div>
+            </div>
           </li>
           <li>
-            <h2>一键选购</h2>
+            <h2>白酒</h2>
+            <div class="box">
+              <div class="img">
+                <img src="img/header/1.png" alt="">
+              </div>
+              <div class="list">
+                <b>一键选购</b>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <br>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <br>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <br>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <br>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <br>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+              </div>
+              <div class="price">
+                <b>价格区间</b>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <br>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+              </div>
+            </div>
           </li>
           <li>
-            <h2>一键选购</h2>
+            <h2>烈酒</h2>
+            <div class="box">
+              <div class="img">
+                <img src="img/header/1.png" alt="">
+              </div>
+              <div class="list">
+                <b>一键选购</b>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <br>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <br>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <br>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <br>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <br>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+              </div>
+              <div class="price">
+                <b>价格区间</b>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <br>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+              </div>
+            </div>
           </li>
           <li>
-            <h2>一键选购</h2>
+            <h2>啤酒</h2>
+            <div class="box">
+              <div class="img">
+                <img src="img/header/1.png" alt="">
+              </div>
+              <div class="list">
+                <b>一键选购</b>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <br>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <br>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <br>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <br>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <br>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+              </div>
+              <div class="price">
+                <b>价格区间</b>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <br>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+              </div>
+            </div>
           </li>
           <li>
-            <h2>一键选购</h2>
+            <h2>酒具周边</h2>
+            <div class="box">
+              <div class="img">
+                <img src="img/header/1.png" alt="">
+              </div>
+              <div class="list">
+                <b>一键选购</b>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <br>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <br>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <br>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <br>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <br>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+              </div>
+              <div class="price">
+                <b>价格区间</b>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <br>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+                <a href="javascript:void(0)">葡萄酒</a>
+              </div>
+            </div>
           </li>
         </ul>
       </li>

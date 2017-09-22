@@ -1,0 +1,236 @@
+#header_tips {
+  width: 100%;
+  height: 38px;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  .hdtips_center {
+    width: 1200px;
+    height: 38px;
+    margin: 0 auto;
+    .hdtips_left ul {
+      float: left;
+      li {
+        height: 38px;
+        line-height: 38px;
+        float: left;
+        margin-right: 15px;
+        span {
+          color: #000;
+        }
+        a {
+          color: #999;
+          cursor: pointer;
+          &:hover {
+            color: #ae1219;
+          }
+        }
+        button {
+          background: none;
+          border: none;
+          font-size: 12px;
+          color: #999;
+          cursor: pointer;
+          &:hover {
+            color: #ae1219;
+          }
+        }
+      }
+    }
+    .hdtips_right ul {
+      float: right;
+      li {
+        margin: 10px 0;
+        height: 14px;
+        line-height: 14px;
+        float: left;
+        padding: 0 10px;
+        border-right: 1px dotted #ccc;
+        position: relative;
+        &:hover i {
+          background-position: -10px 0;
+        }
+        &:hover ul {
+          height: auto;
+          opacity: 1;
+          display: block;
+        }
+        a {
+          color: #999;
+          cursor: pointer;
+          &:hover {
+            color: #ae1219;
+          }
+        }
+        i {
+          width: 10px;
+          height: 6px;
+          float: right;
+          margin: 5px 0 0 5px;
+          background: url(../img/header/ico-2015-12.png) -10px -6px no-repeat;
+        }
+        ul {
+          margin-top: 51px;
+          position: absolute;
+          border: 1px solid #ccc;
+          background: #fff;
+          top: -23px;
+          left: -1px;
+          padding: 0 10px 10px 16px;
+          z-index: 2;
+          width: 60px;
+          line-height: 20px;
+          overflow: hidden;
+          height: 0;
+          opacity: 0;
+          display: none;
+          transition: all 0.5s;
+          li {
+            width: 60px;
+            padding-right: 30px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            margin: 0 auto;
+            a {
+              display: inline-block;
+              color: #999;
+              &:hover {
+                color: #ae1219;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#footer {
+  width: 100%;
+  height: 447px;
+  background: #fff;
+  border-top: 1px solid rgb(204, 204, 204);
+  .footer_happy {
+    width: 1120px;
+    height: 72px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    margin: 0 auto;
+    dl {
+      float: left;
+      width: 280px;
+      height: 50px;
+      margin-top: 22px;
+      dt {
+        float: left;
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+        background: url(../img/footer/ico-2015-12s.png) 0 0 no-repeat;
+      }
+      dd {
+        float: left;
+        width: 112px;
+        height: 34px;
+        margin-top: 6px;
+        font-size: 14px;
+        line-height: 34px;
+      }
+    }
+  }
+  .footer_aboutus {
+    margin: 0 auto;
+    width: 1200px;
+    height: 154px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px dashed rgb(204, 204, 204);
+    dl {
+      width: 145px;
+      height: 106px;
+      float: left;
+      dt {
+        width: 145px;
+        height: 24px;
+        padding-bottom: 10px;
+        font-size: 20px;
+      }
+      dd {
+        width: 145px;
+        height: 24px;
+        a {
+          color: rgb(51, 51, 51);
+          cursor: pointer;
+          &:hover {
+            color: red;
+          }
+        }
+      }
+    }
+  }
+  .footer_tips {
+    width: 1200px;
+    margin: 0 auto;
+    height: 60px;
+    padding: 20px 0;
+    background: #000;
+    .footer_tipsleft {
+      float: left;
+      width: 970px;
+      height: 60px;
+      a {
+        color: #fff;
+      }
+      span {
+        display: block;
+        color: #fff;
+        margin-top: 5px;
+      }
+    }
+    .footer_tipsright {
+      width: 230px;
+      float: left;
+      text-align: right;
+      background: url(../img/header/ico-2015-12.png) 0 -646px no-repeat;
+      span {
+        display: block;
+        color: #fff;
+        margin-top: 8px;
+      }
+    }
+  }
+}
+
+.goods_box {
+  width: 980px;
+  margin: 50px auto;
+  ul.goods_list {
+    li {
+      width: 980px;
+      background: yellow;
+      height: 65px;
+      padding-top: 20px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #f5f5f5;
+      .checkbox {
+        width: 40px;
+        height: 65px;
+        text-align: center;
+        line-height: 64px;
+        float: left;
+      }
+      .cart_good {
+        float: left;
+        width: 390px;
+        height: 65px;
+        a {
+          display: block;
+          width: 60px;
+          height: 60px;
+          
+        }
+      }
+    }
+  }
+}

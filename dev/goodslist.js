@@ -1,12 +1,38 @@
 require(["js/config"], function() {
-  require(["jquery", "header"], function($) {
+  require(["jquery", "template", "engine", "header"], function(
+    $,
+    temp,
+    engine
+  ) {
     $(function() {
       // 右侧边栏
-      $("#right_frame").load("http://localhost:8080/dev/rightframe.html", function() {});
+      $("#right_frame").load("/dev/rightframe.html", function() {});
       // 加载 header
-      $("#header").load("http://localhost:8080/dev/header.html", function() {});
+      $("#header").load("/dev/header.html", function() {
+        // 隐藏商品分类列表
+        $("#mj_ul_goodslist").hide();
+        // 鼠标滑入全部商品，商品分类列表出现
+        $("#mj_a_allgoods").mouseenter(function() {
+          $("#mj_ul_goodslist").show();
+        });
+        $("#mj_a_allgoods").mouseleave(function() {
+          $("#mj_ul_goodslist").hide();
+        });
+      });
       // 加载 footer
-      $("#footer").load("http://localhost:8080/dev/footer.html");
+      $("#footer").load("/dev/footer.html");
+      /* 请求评论数据 开始 */
+      $.ajax({
+        type: "get",
+        url: "/api/simple/srsService/getGoodsComment?page_num=1&show_num=10&pid=628339670&comment_level=-1",
+        success: function(res){
+          var data = JSON.parse(res).result.comments;
+          var strhtml = engine(temp.temp_commentlist, data);
+          var $pinglun_box = $(".pinglun_box:first");
+          $pinglun_box.html(strhtml);
+        }
+      });
+      /* 请求评论数据 结束 */
     });
     /*------------------------ 放大镜开始 ------------------------*/
     $(window).load(function() {

@@ -72,6 +72,78 @@
   top: 0;
 }
 
+.detail_warp .detail_goods .detail_imglist .detail_smallimglist {
+  margin-top: 420px;
+  width: 418px;
+  height: 82px;
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+
+.detail_warp .detail_goods .detail_imglist .detail_smallimglist li {
+  width: 82px;
+  height: 82px;
+  float: left;
+}
+
+.detail_warp .detail_goods .detail_imglist .detail_smallimglist li img.firstimgbg {
+  width: 70px;
+  height: 70px;
+  padding: 5px;
+  background: url(../img/goodslist/p_img.png);
+  background-size: 100%;
+}
+
+.detail_warp .detail_goods .detail_imglist .detail_smallimglist li img.imgbg {
+  width: 70px;
+  height: 70px;
+  padding: 5px;
+}
+
+.detail_warp .detail_goods .detail_imglist .detail_smallimglist li div.pre {
+  float: left;
+  width: 17px;
+  height: 80px;
+  margin-right: 17px;
+}
+
+.detail_warp .detail_goods .detail_imglist .detail_smallimglist li div.pre div {
+  display: block;
+  background: url(../img/goodslist/d_i.png) 0 -56px no-repeat;
+  width: 14px;
+  height: 27px;
+  margin-top: 30px;
+}
+
+.detail_warp .detail_goods .detail_imglist .detail_smallimglist li div.next {
+  float: left;
+  width: 17px;
+  height: 80px;
+  margin-right: 17px;
+}
+
+.detail_warp .detail_goods .detail_imglist .detail_smallimglist li div.next div {
+  display: block;
+  background: url(../img/goodslist/d_i.png) -39px -56px no-repeat;
+  width: 14px;
+  height: 27px;
+  margin-top: 30px;
+}
+
+.detail_warp .detail_goods .detail_imglist div.share {
+  width: 420px;
+  height: 57px;
+  cursor: pointer;
+}
+
+.detail_warp .detail_goods .detail_imglist div.share a,
+.detail_warp .detail_goods .detail_imglist div.share a img {
+  display: block;
+  width: 420px;
+  height: 57px;
+}
+
 .detail_warp .detail_goods .detail_content {
   width: 720px;
   height: 502px;
@@ -220,4 +292,393 @@
   font-size: 14px;
   height: 40px;
   line-height: 40px;
+}
+
+.detail_warp .detail_goods .detail_content div.input_cart {
+  width: 610px;
+  height: 160px;
+}
+
+.detail_warp .detail_goods .detail_content div.input_cart a,
+.detail_warp .detail_goods .detail_content div.input_cart a img {
+  display: block;
+  width: 610px;
+  height: 160px;
+}
+
+.detail_content {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.detail_content .detail_left {
+  float: left;
+  width: 230px;
+  height: 1174px;
+  padding-right: 20px;
+}
+
+.detail_content .detail_left .bought_it {
+  width: 230px;
+  height: 484px;
+  margin-bottom: 20px;
+}
+
+.detail_content .detail_left .bought_it ul.title {
+  width: 230px;
+  height: 34px;
+  background: #a40e59;
+}
+
+.detail_content .detail_left .bought_it ul.title li {
+  height: 34px;
+  color: #fff;
+  line-height: 34px;
+  text-align: center;
+}
+
+.detail_content .detail_left .bought_it ul.goodslist {
+  width: 230px;
+  height: 450px;
+  background: #fff;
+}
+
+.detail_content .detail_left .bought_it ul.goodslist li {
+  width: 190px;
+  height: 60px;
+  padding: 15px 0;
+  margin: 0 20px;
+  position: relative;
+}
+
+.detail_content .detail_left .bought_it ul.goodslist li:hover div.txt a.cart {
+  display: block;
+  float: left;
+  width: 20px;
+  height: 20px;
+  background: url(../img/goodslist/d_i.png) 0 -476px;
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+}
+
+.detail_content .detail_left .bought_it ul.goodslist li div.img a img {
+  float: left;
+  width: 60px;
+  height: 60px;
+}
+
+.detail_content .detail_left .bought_it ul.goodslist li div.txt {
+  float: left;
+  width: 120px;
+  height: 30px;
+}
+
+.detail_content .detail_left .bought_it ul.goodslist li div.txt h4 a.title {
+  display: block;
+  height: 14px;
+  line-height: 14px;
+  color: #333;
+}
+
+.detail_content .detail_left .bought_it ul.goodslist li div.txt h4 a.title:hover {
+  color: #a40e59;
+  cursor: pointer;
+}
+
+.detail_content .detail_left .bought_it ul.goodslist li div.txt span {
+  display: block;
+  float: left;
+  color: #a40e59;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.detail_content .detail_left div.related_class {
+  width: 230px;
+  height: 146px;
+  margin-bottom: 20px;
+}
+
+.detail_content .detail_left div.related_class ul.title {
+  width: 230px;
+  height: 34px;
+  background: #a40e59;
+}
+
+.detail_content .detail_left div.related_class ul.title li {
+  height: 34px;
+  color: #fff;
+  line-height: 34px;
+  text-align: center;
+}
+
+.detail_content .detail_left div.related_class div {
+  background: #fff;
+  width: 190px;
+  height: 72px;
+  padding: 20px;
+}
+
+.detail_content .detail_left div.related_class div a {
+  display: block;
+  float: left;
+  width: 95px;
+  height: 24px;
+  line-height: 24px;
+  color: #333;
+  cursor: pointer;
+}
+
+.detail_content .detail_left div.related_class div a:hover {
+  color: #a40e59;
+}
+
+.detail_content .detail_right {
+  width: 950px;
+  float: left;
+  background: #fff;
+}
+
+.detail_content .detail_right .right_box {
+  width: 950px;
+}
+
+.detail_content .detail_right .right_box ul.ul_first {
+  width: 950px;
+  height: 35px;
+  background: #efefef;
+}
+
+.detail_content .detail_right .right_box ul.ul_first li.first {
+  background: #a40e59;
+  border-right: 1px solid #a40e59;
+}
+
+.detail_content .detail_right .right_box ul.ul_first li.first a {
+  color: #fff;
+}
+
+.detail_content .detail_right .right_box ul.ul_first li {
+  float: left;
+  width: 56px;
+  height: 35px;
+  padding: 0 15px;
+  line-height: 34px;
+  border-right: 1px solid #fff;
+  cursor: pointer;
+}
+
+.detail_content .detail_right .right_box ul.ul_first li:hover {
+  background: #a40e59;
+  border-right: 1px solid #a40e59;
+}
+
+.detail_content .detail_right .right_box ul.ul_first li:hover a {
+  color: #fff;
+}
+
+.detail_content .detail_right .right_box ul.ul_first li a {
+  color: #333;
+  font-size: 14px;
+}
+
+.detail_content .detail_right .right_box .goods_evaluation {
+  width: 950px;
+}
+
+.detail_content .detail_right .right_box .goods_evaluation div.title {
+  width: 950px;
+  height: 35px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  background: #efefef;
+}
+
+.detail_content .detail_right .right_box .goods_evaluation div.title label {
+  display: block;
+  width: 130px;
+  height: 35px;
+  line-height: 34px;
+  color: #fff;
+  background: #a40e59;
+  text-align: center;
+  font-size: 16px;
+}
+
+.detail_content .detail_right .right_box .goods_evaluation div.percent {
+  width: 950px;
+  height: 53px;
+  background: #fff;
+}
+
+.detail_content .detail_right .right_box .goods_evaluation div.percent ul.ul_percent {
+  width: 950px;
+  height: 53px;
+}
+
+.detail_content .detail_right .right_box .goods_evaluation div.percent ul.ul_percent li.good_percent {
+  float: left;
+  width: 130px;
+  height: 52px;
+  line-height: 52px;
+  background: #efefef;
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+}
+
+.detail_content .detail_right .right_box .goods_evaluation div.percent ul.ul_percent li.other {
+  float: left;
+  width: 130px;
+  height: 53px;
+  line-height: 52px;
+  background: #fff;
+  text-align: center;
+}
+
+.detail_content .detail_right .right_box .goods_evaluation div.percent ul.ul_percent li.only {
+  float: left;
+  width: 130px;
+  height: 53px;
+  line-height: 52px;
+  background: #fff;
+  text-align: center;
+}
+
+.detail_content .detail_right .right_box .goods_evaluation div.pinglun_box {
+  width: 950px;
+}
+
+.detail_content .detail_right .right_box .goods_evaluation div.pinglun_box div.pinglun {
+  width: 950px;
+}
+
+.detail_content .detail_right .right_box .goods_evaluation div.pinglun_box div.pinglun div.person_pinglun {
+  width: 950px;
+  padding-bottom: 15px;
+  padding-top: 25px;
+}
+
+.detail_content .detail_right .right_box .goods_evaluation div.pinglun_box div.pinglun div.person_pinglun div.person_left {
+  float: left;
+  width: 125px;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.detail_content .detail_right .right_box .goods_evaluation div.pinglun_box div.pinglun div.person_pinglun div.person_left img {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #e6e6e6;
+  border-radius: 35px;
+}
+
+.detail_content .detail_right .right_box .goods_evaluation div.pinglun_box div.pinglun div.person_pinglun div.person_left label.level_name {
+  padding-top: 10px;
+  display: block;
+  text-align: center;
+}
+
+.detail_content .detail_right .right_box .goods_evaluation div.pinglun_box div.pinglun div.person_pinglun div.person_left label.nick_name {
+  display: block;
+  text-align: center;
+}
+
+.detail_content .detail_right .right_box .goods_evaluation div.pinglun_box div.pinglun div.person_pinglun div.person_right {
+  float: left;
+  width: 760px;
+  padding: 0 25px 25px 25px;
+  border: 1px solid #e5e5e5;
+  color: #d08d06;
+  position: relative;
+}
+
+.detail_content .detail_right .right_box .goods_evaluation div.pinglun_box div.pinglun div.person_pinglun div.person_right .right_ico {
+  position: absolute;
+  z-index: 1;
+  top: 25px;
+  left: -12px;
+  width: 12px;
+  height: 18px;
+  background: url(../img/goodslist/d_i.png) 0 -247px no-repeat;
+}
+
+.detail_content .detail_right .right_box .goods_evaluation div.pinglun_box div.pinglun div.person_pinglun div.person_right div.mark {
+  padding: 15px 0;
+  border-bottom: 1px dotted #e5e5e5;
+  color: #333;
+  position: relative;
+  width: 760px;
+  height: 20px;
+}
+
+.detail_content .detail_right .right_box .goods_evaluation div.pinglun_box div.pinglun div.person_pinglun div.person_right div.mark p {
+  width: 45px;
+  float: left;
+  line-height: 20px;
+  height: 20px;
+}
+
+.detail_content .detail_right .right_box .goods_evaluation div.pinglun_box div.pinglun div.person_pinglun div.person_right div.mark em {
+  background: url(../img/goodslist/d_i.png) 0 -36px no-repeat;
+  display: block;
+  width: 97px;
+  height: 20px;
+  float: left;
+}
+
+.detail_content .detail_right .right_box .goods_evaluation div.pinglun_box div.pinglun div.person_pinglun div.person_right div.mark em label {
+  background: url(../img/goodslist/d_i.png) 0 -17px no-repeat;
+  display: block;
+  height: 20px;
+  width: 97px;
+}
+
+.detail_content .detail_right .right_box .goods_evaluation div.pinglun_box div.pinglun div.person_pinglun div.person_right div.mark span {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 15px;
+}
+
+.detail_content .detail_right .right_box .goods_evaluation div.pinglun_box div.pinglun div.person_pinglun div.person_right div.pinglun_content {
+  color: #333;
+  padding: 20px 0;
+  width: 760px;
+}
+
+.detail_content .detail_right .right_box .goods_detail {
+  width: 950px;
+}
+
+.detail_content .detail_right .right_box .goods_detail img.img01 {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 930px;
+}
+
+.detail_content .detail_right .right_box .goods_detail div.goods_detailimg {
+  width: 950px;
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+
+.detail_content .detail_right .right_box .goods_detail div.goods_detailimg p {
+  width: 910px;
+  padding: 10px 20px;
+}
+
+.detail_content .detail_right .right_box .goods_detail div.goods_detailimg p img {
+  display: block;
+  width: 916px;
+}
+
+.detail_content .detail_right .right_box .goods_canshu img {
+  width: 892px;
+  margin: 20px 29px;
 }
