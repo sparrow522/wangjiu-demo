@@ -1,0 +1,105 @@
+/* CSS Document */
+.rightFixedBar_inner {
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: #eee;
+  width: 32px;
+  height: 100%;
+  padding-top: 7%;
+}
+
+.rightFixedBar_inner .redbtn {
+  display: block;
+  padding: 0 3px;
+  cursor: pointer;
+  position: relative;
+  color: #c40000;
+  text-align: center;
+}
+
+.rightFixedBar_inner .redbtn:hover {
+  background: #c40000;
+  color: #fff;
+}
+
+.rightFixedBar_inner .icon_box {
+  font-size: 20px;
+  padding: 10px 0;
+  border-bottom: 1px solid #c8c8c8;
+  width: 100%;
+}
+
+.rightFixedBar_inner .usercenter {
+  position: relative;
+}
+
+.rightFixedBar_inner .usercenter .icon_tip {
+  display: none;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  position: absolute;
+  top: 0;
+  right: 100px;
+  background: #000;
+}
+
+.rightFixedBar_inner .usercenter .icon_tip .tips {
+  color: #fff;
+}
+
+.rightFixedBar_inner .usercenter .icon_tip .tips_arrow {
+  position: absolute;
+  top: 10px;
+  font-size: 18px;
+  right: -13px;
+  color: #000;
+}
+
+.rightFixedBar_inner .carbox p {
+  font-size: 13px;
+}
+
+.rightFixedBar_inner .margintop70 {
+  margin-top: 70px;
+}
+
+.rightFixedBar_inner .hotgoodsbox {
+  display: none;
+  position: absolute;
+  padding: 10px;
+  border: 1px solid #ccc;
+  top: 0;
+  right: 100px;
+  background: #fff;
+}
+
+.rightFixedBar_inner .hotgoodsbox .goods_arrow {
+  position: absolute;
+  top: 10px;
+  font-size: 18px;
+  right: -13px;
+  color: #fff;
+}
+
+.rightFixedBar_inner .qrcodebox {
+  display: none;
+  right: 100px;
+  top: 0;
+  position: absolute;
+  border: 2px solid #aaa;
+}
+
+.rightFixedBar_inner .qrcodebox .qrcode img {
+  width: 200px;
+}
+
+.rightFixedBar_inner .qrcodebox .qr_arrow {
+  position: absolute;
+  top: 10px;
+  font-size: 18px;
+  right: -13px;
+  color: #eee;
+}

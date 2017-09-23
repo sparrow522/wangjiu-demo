@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/* CSS Document */
+body, p, h1, h2, h3, h4, h5, h6, ul, dl, dd, td, input, fieldset, textarea, option {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a, input {
+  outline: none;
+}
+
+h1, h2, h3, h4, h5, h6, b, strong {
+  font-weight: 100;
+}
+
+i, em {
+  font-style: normal;
+}
+
+body {
+  font: 12px "微软雅黑";
+}
+
+.clear:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}

@@ -6,7 +6,7 @@ require(["js/config"], function() {
   ) {
     $(function() {
       // 右侧边栏
-      $("#right_frame").load("/dev/rightframe.html", function() {});
+      $("#right_frame").load("/dev/wzq-rightFixedBar.html", function() {});
       // 加载 header
       $("#header").load("/dev/header.html", function() {
         // 隐藏商品分类列表

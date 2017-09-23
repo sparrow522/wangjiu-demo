@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -12,7 +13,7 @@
   <link rel="stylesheet" href="css/cart.css">
 </head>
 
-<body>
+<body style="background: #F8F8F8;">
   <div id="header_tips">
     <div class="hdtips_center">
       <div class="hdtips_left">
@@ -71,20 +72,78 @@
       </div>
     </div>
   </div>
+
+  <div class="cart_box">
+    <div class="cart_header">
+      <div class="cart_logo">
+        <a href="javascript:void(0)"><img src="img/cart/leico.png" alt=""></a>
+      </div>
+      <div class="cart_title">购物车</div>
+      <div class="cart_status"></div>
+    </div>
+  </div>
+
+  <div class="login_box"></div>
+
+  <div class="goodsbox_header">
+    <a href="javascript:void(0)"><img src="img/cart/4.jpg" alt=""></a>
+  </div>
+
   <div class="goods_box clear">
-    <ul class="goods_list clear">
+    <ul class="goods_list clear" id="cart_goodslist">
       <li>
         <div class="checkbox">
           <input type="checkbox" checked>
-          <div class="cart_good">
-            <a href="javascript:void(0)"><img src="" alt=""></a>
+        </div>
+        <div class="cart_good">
+          <a class="img" href="javascript:void(0)">
+            <img src="img/cart/1.jpg" alt="">
+          </a>
+          <a class="word" href="javascript: void(0)">52度剑南春</a>
+        </div>
+        <span class="price">￥999.00</span>
+        <div class="store">
+          <div class="goodsadd">
+            <a class="sub" href="javascript:void(0)">-</a>
+            <input type="text" value="1">
+            <a class="add" href="javascript:void(0)">+</a>
+            <p>有货</p>
           </div>
+        </div>
+        <div class="total_price">139.00</div>
+        <div class="operation">
+          <a href="javascript:void(0)">收藏</a>
+          <a href="javascript:void(0)">删除</a>
         </div>
       </li>
       <li></li>
       <li></li>
     </ul>
   </div>
+
+  <div id="cart_settlement" class="cart_settlement">
+    <div class="settle_left">
+      <input type="checkbox" checked>
+      <a href="javascript:void(0)">全选</a>
+      <a href="javascript:void(0)">删除选中商品</a>
+    </div>
+    <div class="settle_right">
+      <ul>
+        <li class="num"><span>商品数量：</span><em>2</em><span>件</span></li>
+        <li><span>为您节省：</span><em>0.00</em></li>
+        <li><span>商品总价（不含运费）：</span></li>
+        <li class="total_price"><span>￥</span><span>598.00</span></li>
+        <li class="settle"><a href="javascript:void(0)">去结算</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="recommend clear">
+    <a href="javascript:void(0)">
+      <img src="img/cart/2.jpg" alt="">
+    </a>
+  </div>
+
   <div id="footer">
     <div class="footer_happy">
       <dl>
@@ -123,6 +182,7 @@
       </div>
     </div>
   </div>
+
   <script data-main="cart.js" src="js/require.js"></script>
 </body>
 
